@@ -1,0 +1,25 @@
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --accent: #6366F1 ;
+  --neutral: #F9FAFB;
+  --text-primary: #111827 ;
+  --text-secondary: #ffffff;
+  --highlight: #059669 ;
+  --color: #2DE1FC;
+  --color2: #2AFC98;
+  --color3: #09E85E;
+  --color4: #16C172;
+  --color5: #214F4B;
+}
+
+.dark {
+  --background: #262626;
+  --accent: #6366F1 ;
+  --neutral: #323232;
+  --primary: #ebebeb ;
+  --secondary: #ffffff;
+  --highlight: #059669 ;
+}
