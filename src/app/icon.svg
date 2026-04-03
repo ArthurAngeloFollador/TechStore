@@ -1,0 +1,13 @@
+<svg width="140" height="140" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexágono -->
+  <path d="M50 10 L80 27.5 V72.5 L50 90 L20 72.5 V27.5 Z" 
+        stroke="#09E85E" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Linha horizontal (topo do T) -->
+  <line x1="35" y1="42" x2="65" y2="42" 
+        stroke="#09E85E" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Linha vertical (corpo do T) -->
+  <line x1="50" y1="42" x2="50" y2="65" 
+        stroke="#09E85E" stroke-width="4" stroke-linecap="round"/>
+</svg>

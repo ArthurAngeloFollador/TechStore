@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF;
+  --background: #F6F6F8;
   --accent: #6366F1 ;
-  --neutral: #F9FAFB;
+  --neutral: rgb(84, 84, 84);
   --text-primary: #111827 ;
   --text-secondary: #ffffff;
   --highlight: #059669 ;
@@ -22,4 +22,47 @@
   --primary: #ebebeb ;
   --secondary: #ffffff;
   --highlight: #059669 ;
+}
+
+/* Typography */
+@tailwind utilities;
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+@layer components {
+  /* Titles */
+  .title-1 {
+    @apply text-5xl leading-tight font-bold;
+  }
+
+  .title-2 {
+    @apply text-3xl leading-snug font-semibold;
+  }
+
+  /* Cards */
+  .card-title {
+    @apply text-lg leading-snug font-semibold;
+  }
+
+  .card-text{
+    @apply text-base leading-relaxed;
+  }
+
+  .subtitle {
+    @apply text-lg leading-relaxed;
+    color: var(--neutral);
+  }
+  
+  /* Buttons */
+  .button-primary {
+    @apply font-bold text-textSecondary;
+  }
+
+  /* Bottom */
+  .bottom-text {
+    @apply text-sm leading-relaxed;
+    color: var(--neutral);
+  }
 }

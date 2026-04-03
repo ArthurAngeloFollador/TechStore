@@ -1,6 +1,8 @@
-import { BsFillMotherboardFill } from "react-icons/bs";
+// import { BsFillMotherboardFill } from "react-icons/bs";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
+import Icon from "@/app/icon.svg";
+import Image from "next/image";
 
 function Header() {
   return (
@@ -8,10 +10,18 @@ function Header() {
       <div className="flex items-center gap-10">
         {/* Logo */}
         <div className="flex items-center justify-center gap-2 p-2 pl-4 font-bold select-none">
-          <BsFillMotherboardFill size={35} /> TechStore
+          <Image
+            draggable={false}
+            src={Icon}
+            alt="Icon"
+            width={30}
+            height={30}
+            quality={100}
+          />{" "}
+          TechStore
         </div>
         {/* Navigation */}
-        <div className="flex gap-8 text-neutral-600 select-none">
+        <div className="flex items-center gap-8 text-neutral-600 select-none">
           <div className="cursor-pointer">Home</div>
           <div className="cursor-pointer">Categories</div>
           <div className="cursor-pointer">Products</div>

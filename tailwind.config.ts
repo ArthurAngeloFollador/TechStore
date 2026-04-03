@@ -21,6 +21,12 @@ const config: Config = {
         color4: "var(--color4)",
         color5: "var(--color5)",
       },
+      text: {
+        title1: "var(--title-1)",
+        title2: "var(--title-2)",
+        subtitle: "var(--subtitle)",
+        buttonPrimary: "var(--button-primary)",
+      }
     },
   },
   plugins: [],
