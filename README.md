@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TechStore
 
-## Getting Started
+Projeto pessoal criado para praticar Next.js, TypeScript e Tailwind CSS. É uma página de e-commerce, focada mais em estrutura e componentização do que em funcionalidades completas de loja (por enquanto não tem carrinho funcional, autenticação nem catálogo de produtos real).
 
-First, run the development server:
+## Sobre
+
+A ideia foi montar a arquitetura de uma loja online do zero: header fixo, seção hero, cards de tecnologias e rodapé, tudo componentizado e estilizado com Tailwind. Serve mais como base de estudo e portfólio do que como um produto pronto.
+
+## Tecnologias
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- react-icons
+
+## Rodando localmente
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/ArthurAngeloFollador/TechStore.git
+cd TechStore
+npm install
+```
+
+Depois inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador. A página principal do projeto fica em `/about`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera o build de produção
+- `npm run start` — roda o build de produção
+- `npm run lint` — roda o ESLint
 
-## Learn More
+## Estrutura do projeto
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    layout.tsx       # layout raiz (Header + Bottom)
+    about/page.tsx    # página principal com Hero e Section2
+  components/
+    header.tsx         # cabeçalho fixo com navegação
+    hero.tsx            # seção de introdução do projeto
+    section2.tsx      # seção que lista as tecnologias usadas
+    card.tsx             # card individual de cada tecnologia
+    bottom.tsx        # rodapé
+  styles/
+    globals.css        # variáveis de cor e classes utilitárias
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ainda em desenvolvimento. Próximos passos que pretendo fazer: página inicial própria (hoje o conteúdo principal está em `/about`), catálogo de produtos e talvez um carrinho funcional.
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projeto pessoal sem licença definida, sinta-se livre para olhar o código e usar como referência.
